@@ -9,6 +9,10 @@ use Image;
 
 class BrandController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth');
+    }
+
     public function AllBrand(){
         $brands = Brand::latest()->paginate(5);
         return view('admin.brand.index', compact('brands'));
@@ -118,6 +122,11 @@ class BrandController extends Controller
     }
 
     public function StoreImg(Request $request){
+        $validatedData = $request->validate([
+            'image' => 'required',
+            'image.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+
         $image = $request->file('image');
 
         foreach($image as $multi_img){
@@ -127,7 +136,7 @@ class BrandController extends Controller
 
             $last_img = 'images/multi/'.$name_gen;
 
-            Brand::insert([
+            Multipic::insert([
                 'image' => $last_img,
                 'created_at' => Carbon::now(),
             ]);

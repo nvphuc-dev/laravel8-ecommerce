@@ -13,4 +13,10 @@
 20210405-5.20PM - "2. Laravel 8 A-Z Basic Fandamentals with Complete Dynamic Web Project\33. Eloquent ORM Edit,Update Data With Image & Without Image Part 2.mp4"
 20210406-1.18PM - "2. Laravel 8 A-Z Basic Fandamentals with Complete Dynamic Web Project\34. Delete Data With Image.mp4"
 20210406-1.33PM - "2. Laravel 8 A-Z Basic Fandamentals with Complete Dynamic Web Project\35. Image Insert & Resize With Intervention Package.mp4"
-20210406-2.39PM - "2. Laravel 8 A-Z Basic Fandamentals with Complete Dynamic Web Project\37. Multiple Image Upload Part 2.mp4"
+20210422-3.30PM - "2. Laravel 8 A-Z Basic Fandamentals with Complete Dynamic Web Project\36. Multiple Image Upload Part 1.mp4"
+20210422-3.45PM - "2. Laravel 8 A-Z Basic Fandamentals with Complete Dynamic Web Project\37. Multiple Image Upload Part 2.mp4"
+20210422-4.05PM - "2. Laravel 8 A-Z Basic Fandamentals with Complete Dynamic Web Project\38. Update User Profile and Change Password.mp4"
+20210422-4.28PM - "2. Laravel 8 A-Z Basic Fandamentals with Complete Dynamic Web Project\39. Forgot Password & Password Reset.mp4"
+20210422-4.46PM - "2. Laravel 8 A-Z Basic Fandamentals with Complete Dynamic Web Project\40. Email Verify in Laravel.mp4"
+20210422-5.14PM - "2. Laravel 8 A-Z Basic Fandamentals with Complete Dynamic Web Project\41. Middleware Auth Users Access Control.mp4"
+

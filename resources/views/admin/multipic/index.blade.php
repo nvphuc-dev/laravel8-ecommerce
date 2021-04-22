@@ -21,7 +21,17 @@
                     <div class="card">
                         <div class="card-header">All Images</div>
                         <div class="card-body">
-                            
+                            <div class="card-group">
+                                <div class="row">
+                                    @foreach($images as $multi_img)
+                                    <div class="col-md-4 mb-4">
+                                        <div class="card">
+                                            <img src="{{ asset($multi_img->image) }}" alt="">
+                                        </div>
+                                    </div>
+                                    @endforeach
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -47,6 +57,6 @@
         </div>
 
         <!-- Trash Part -->
-        
+
     </div>
 </x-app-layout>
