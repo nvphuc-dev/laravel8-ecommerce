@@ -2,14 +2,15 @@
 @section('admin')
 <div class="row">
 	<div class="col-md-12">
-		@if(session('success'))
+		<!-- Alert with bootstrap -> Notification-->
+		<!-- @if(session('success'))
 		<div class="alert alert-success alert-dismissible fade show" role="alert">
 			<strong>{{ session('success') }}</strong>
 			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 				<span aria-hidden="true">&times;</span>
 			</button>
 		</div>
-		@endif
+		@endif -->
 		<div class="card">
 			<div class="card-header">Edit Slider</div>
 			<div class="card-body">
@@ -46,7 +47,11 @@
 						<span class="text-danger">{{ $message }}</span>
 						@enderror
 					</div>
+					<div class="form-footer pt-4 pt-5 mt-4 border-top">
 					<button type="submit" class="btn btn-primary">Update Slider</button>
+						<a href="{{ url('slider/delete/'.$sliders->id) }}" onclick="return confirm('Are you sure to delete?')" class="btn btn-secondary btn-danger">Delete</a>
+					</div>
+					
 				</form>
 			</div>
 		</div>

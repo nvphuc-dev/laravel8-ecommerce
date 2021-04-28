@@ -51,8 +51,12 @@ class BrandController extends Controller
 			'brand_image' => $last_img,
 			'created_at' => Carbon::now(),
 		]);
-
-		return Redirect()->back()->with('success', 'Brand Inserted Successfully.');
+		// Notification
+        $notification = array(
+            'message' => 'Brand Inserted Successfully.',
+            'alert-type' => 'info'
+        );
+		return Redirect()->back()->with($notification);
 	}
 
 	public function Edit($id){
@@ -91,15 +95,23 @@ class BrandController extends Controller
 				'brand_image' => $last_img,
 				'updated_at' => Carbon::now(),
 			]);
-	
-			return Redirect()->back()->with('success', 'Brand Updated Successfully.');
+			// Notification
+			$notification = array(
+				'message' => 'Brand Updated Successfully.',
+				'alert-type' => 'success'
+			);
+			return Redirect()->back()->with($notification);
 		} else {
 			Brand::find($id)->update([
 				'brand_name' => $request->brand_name,
 				'updated_at' => Carbon::now(),
 			]);
-
-			return Redirect()->back()->with('success', 'Brand Updated Successfully.');
+			// Notification
+			$notification = array(
+				'message' => 'Brand Updated Successfully.',
+				'alert-type' => 'warning'
+			);
+			return Redirect()->back()->with($notification);
 		}
 		
 	}
@@ -111,8 +123,12 @@ class BrandController extends Controller
 		unlink($old_image);
 
 		Brand::find($id)->delete();
-
-		return Redirect()->back()->with('success', 'Brand Deleted Successfully.');
+		// Notification
+		$notification = array(
+			'message' => 'Brand Deleted Successfully.',
+			'alert-type' => 'error'
+		);
+		return Redirect()->back()->with($notification);
 	}
 
 	// This is for Multi Image All Methods
@@ -142,8 +158,12 @@ class BrandController extends Controller
 				'created_at' => Carbon::now(),
 			]);
 		}
-
-		return Redirect()->back()->with('success', 'Multi Image Inserted Successfully.');
+		// Notification
+		$notification = array(
+			'message' => 'Multi Image Inserted Successfully.',
+			'alert-type' => 'info'
+		);
+		return Redirect()->back()->with($notification);
 	}
 
 	public function Logout(){

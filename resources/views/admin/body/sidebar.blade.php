@@ -26,7 +26,7 @@
 		<!-- begin sidebar scrollbar -->
 		<div class="sidebar-scrollbar">
 			<!-- sidebar menu -->
-			<ul class="nav sidebar-inner" id="sidebar-menu">
+			<ul class="nav sidebar-inner js-nav" id="sidebar-menu">
 				<li  class="has-sub active expand" >
 					<a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#dashboard"
 						aria-expanded="false" aria-controls="dashboard">
@@ -36,7 +36,12 @@
 					<ul  class="collapse show"  id="dashboard"
 						data-parent="#sidebar-menu">
 						<div class="sub-menu">
-							<li  class="active" >
+						<li  class="active" >
+								<a class="sidenav-item-link" href="{{ url('dashboard') }}">
+								<span class="nav-text">Dashboard</span>
+								</a>
+							</li>
+							<li>
 								<a class="sidenav-item-link" href="{{ route('home.slider') }}">
 								<span class="nav-text">Slider</span>
 								</a>

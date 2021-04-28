@@ -3,7 +3,7 @@
 <div class="col-lg-12">
 	<div class="card card-default">
 		<div class="card-header card-header-border-bottom">
-			<h2>Edit Contact</h2>
+			<h2>View Contact Message</h2>
 		</div>
 		<div class="card-body">
 			<form action="{{ url('update/contact/'.$contacts->id) }}" method="POST" enctype="multipart/form-data">

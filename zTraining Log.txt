@@ -41,6 +41,18 @@
 20210426-6.41PM - "2. Laravel 8 A-Z Basic Fandamentals with Complete Dynamic Web Project\61. Setup Contact Page Part 2.mp4"
 20210426-6.57PM - "2. Laravel 8 A-Z Basic Fandamentals with Complete Dynamic Web Project\62. Setup Contact Page Part 3.mp4"
 20210426-7.10PM - "2. Laravel 8 A-Z Basic Fandamentals with Complete Dynamic Web Project\63. Setup Contact Page Part 4.mp4"
-20210426-7.44 - "2. Laravel 8 A-Z Basic Fandamentals with Complete Dynamic Web Project\64. Setup Contact Page Part 5.mp4" Chưa Xong
+20210427-9.53AM - "2. Laravel 8 A-Z Basic Fandamentals with Complete Dynamic Web Project\64. Setup Contact Page Part 5.mp4"
+20210427-11.02AM - "2. Laravel 8 A-Z Basic Fandamentals with Complete Dynamic Web Project\65. Change Password Option Part 1.mp4"
+20210427-12.14AM - "2. Laravel 8 A-Z Basic Fandamentals with Complete Dynamic Web Project\66. Change Password Option Part 2.mp4"
+20210427-12.22AM - "2. Laravel 8 A-Z Basic Fandamentals with Complete Dynamic Web Project\67. Change Password Option Part 3.mp4"
+20210427-1.26PM - "2. Laravel 8 A-Z Basic Fandamentals with Complete Dynamic Web Project\68. Chage User Profile Part 1.mp4"
+20210427-1.43PM - "2. Laravel 8 A-Z Basic Fandamentals with Complete Dynamic Web Project\69. Chage User Profile Part 2.mp4"
+20210427-2.28PM - "2. Laravel 8 A-Z Basic Fandamentals with Complete Dynamic Web Project\70. How to add Toster in Project.mp4"
+3~7 : Đã hoàn thành tại nhà
+20210428-1.11PM - "8. Build Professional Ecommerce Project\1. Build Professional Ecommerce Project.mp4"
+20210428-1.11PM - "8. Build Professional Ecommerce Project\2. Project Introduction  What you will build end of this course..mp4"
+20210428-1.11PM - "8. Build Professional Ecommerce Project\3. Download Excies Files for Ecommerce Project.mp4"
+20210428-2.12PM - "8. Build Professional Ecommerce Project\4. Project Setup Ready for work.mp4"
+
 
 

@@ -6,6 +6,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ChangePassController;
 use App\Models\User;
 use App\Models\Multipic;
 use Illuminate\Support\Facades\DB;
@@ -90,6 +91,8 @@ Route::get('/contact/edit/{id}', [ContactController::class, 'EditContact']);
 Route::post('/update/contact/{id}', [ContactController::class, 'UpdateContact']);
 Route::get('/contact/delete/{id}', [ContactController::class, 'DeleteContact']);
 Route::get('/admin/message', [ContactController::class, 'AdminMessage'])->name('admin.message');
+Route::get('/contact/viewmsg/{id}', [ContactController::class, 'ViewMsgContact']);
+Route::get('/message/delete/{id}', [ContactController::class, 'DeleteMessage']);
 
 // Home Contact Page Route
 Route::get('/contact', [ContactController::class, 'Contact'])->name('contact');
@@ -105,3 +108,12 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 Route::get('/user/logout', [BrandController::class, 'Logout'])->name('user.logout');
+
+// Change Password and user Profile Route
+Route::get('/user/password', [ChangePassController::class, 'ChangePassword'])->name('change.password');
+Route::post('/password/update', [ChangePassController::class, 'UpdatePassword'])->name('password.update');
+
+// User Profile
+Route::get('/user/profile', [ChangePassController::class, 'PUpdate'])->name('profile.update');
+Route::post('/user/profile/update', [ChangePassController::class, 'UpdateProfile'])->name('update.user.profile');
+
